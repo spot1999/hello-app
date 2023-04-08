@@ -35,9 +35,11 @@ resized_img.save('images/sepehr-safari-sajiam-n8bZJpA0hig-unsplash.jpg')
 
 img_s=Image.open('images/filipino_style.jpg')
 #,width=500, height=300
-now=datetime.datetime.now()
-hour=now.hour
-greet=None
+# Set the timezone to 'Asia/Manila'
+tz = pytz.timezone('Asia/Manila')
+now = datetime.datetime.now(tz)
+hour = now.hour
+greet = None
 if hour < 12:
     greet = " Good morning!"
 elif hour < 18:
