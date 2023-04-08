@@ -82,9 +82,9 @@ with st.container():
         st.subheader('This picture is from the pixel-bay website')
         st.write('##')
         st.write(
-            "This is the picture tat caught my attention to edit for clothings:\n"
-            "- It is a plain black cloths with the bacgground of cars\n"
-            "- looking at it makes have no sense\n"
+            "This is the picture that caught my interest to edit clothings for fashions:\n"
+            "- It is a plain black cloths with the background a car\n"
+            "- looking at the design  ,makes have no sense\n"
         )
         #st.write('[Learn more>](https://www.freecodecamp.org/learn/)')
 with st.container():
@@ -101,8 +101,12 @@ with st.container():
         st.subheader('Filipino Style Cloth')
         st.write('##')
         st.write(
-            "Ive have no background in editing image but this is the first time ive created one :\n"
-            "- Sit and watch action movies\n"
+            "Ive have no background in editing image and this is the first time I've created one :\n"
+            "- This is base on the concept of Philipine National flag\n"
+             "- The red color symbolize PRIDE\n"
+             "- The blue color symbolize PEACE\n"
+            "- The blue color sygnifize HOPE\n"
+             "- The concept of my design is about pride,peace and hope of the country\n"
 
         )
         #st.write('[Learn more>](https://www.freecodecamp.org/learn/)')
