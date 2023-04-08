@@ -110,7 +110,7 @@ with st.container():
             "- This is base on the concept of Philipine National flag\n"
              "- The red color symbolize PRIDE\n"
              "- The blue color symbolize PEACE\n"
-            "- The blue color sygnifize HOPE\n"
+            "- The yellow color signifies HOPE\n"
              "- The concept of my design is about pride,peace and hope of the country\n"
 
         )
