@@ -60,8 +60,13 @@ with st.container():
         st.write('##')
         st.write(
             "Based on the things I like to do, they are very different from the courses I've taken:\n"
-            "- Play PUBG Mobile\n"
-            "- Sit and watch action movies\n"
+             "- I love to play and cover songs with my guitar\n"
+            "- I love to play PUBG Mobile(action games etc.)\n"
+            "- I love to watch action movies e.g('batman movies,tekken,word war movies')\n"
+             "- I love to swim in the river\n"
+             "- I love to bike along the high way\n"
+             "- I love to fix tires\n"
+             "- I love math and logic problems\n"
 
                  )
         st.write('[Learn more>](https://www.freecodecamp.org/learn/)')
@@ -84,7 +89,7 @@ with st.container():
         st.write(
             "This is the picture that caught my interest to edit clothings for fashions:\n"
             "- It is a plain black cloths with the background a car\n"
-            "- looking at the design  ,makes have no sense\n"
+            "- looking at the design  ,it makes no sense\n"
         )
         #st.write('[Learn more>](https://www.freecodecamp.org/learn/)')
 with st.container():
