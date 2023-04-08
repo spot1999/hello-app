@@ -38,14 +38,11 @@ now=datetime.datetime.now()
 hour=now.hour
 greet=None
 if hour < 12:
-    #st.write("Good morning!")
-    greet=" Good morning!"
+    greet = " Good morning!"
 elif hour < 18:
-    # st.write("Good evening!")
-    greet =" Good afternoon!"
+    greet = " Good afternoon!"
 else:
-    # st.write("Good evening!")
-    greet =" Good evening!"
+    greet = " Good evening!"
 
 st.subheader('hi visitor:wave:'+greet)
 st.title('My name is Greyhack1999:')
