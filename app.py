@@ -5,14 +5,50 @@ import datetime
 from streamlit_lottie import st_lottie
 from PIL import Image
 
-def local_css(file_name):
-    with open(file_name) as f:
-
-        css = f.read()
-        #st.markdown("<style>{}</style>".format(css), unsafe_allow_html=True)
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 st.set_page_config(page_title="My portfolio", page_icon=":tada:", layout="wide")
+# page_bg_img = """
+# <style>
+# body {
+#     background-image: url("https://your-image-url-here");
+#     background-size: cover;
+# }
+# </style>
+# """
+# st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Your Streamlit app code here...
+#background-color:#9933ff;
+page_bg_img=""""
+<style>
+[data-testid="stAppViewContainer"]{
+background-color: #9933ff;
+background-blend-mode: normal;
+opacity:0.9;
+}
+</style>
+"""
+st.markdown(page_bg_img,unsafe_allow_html=True)
+
+# def local_css(file_name):
+#     with open(file_name) as f:
+#         css = f.read()
+#         #st.markdown("<style>{}</style>".format(css), unsafe_allow_html=True)
+#         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+#st.set_page_config(page_title="My portfolio", page_icon=":tada:", layout="wide")
+
+# import streamlit as st
+#
+# st.set_page_config(
+#     page_title="My Page Title",
+#     page_icon=":smiley:",
+#     layout="wide",
+#     initial_sidebar_state="expanded",
+#     page_bg_color="#0E1117",
+#     )
+
+# Your Streamlit app code here
 
 st.write("")
 
@@ -41,7 +77,7 @@ greet = None
 if hour < 12:greet = " Good Morning!!! :sun_with_face: :kissing_heart: :kissing_heart: :kissing_heart:"
 elif hour < 18:greet = " Good afternoon!!! 🌤️😘😘😘"
 else:greet = " Good Evening!!! :night_with_stars: :kissing_heart: :kissing_heart: :kissing_heart:"
-st.subheader('Hi Visitor :wave:'+greet)
+st.subheader('Hi visitor:wave:      '+greet)
 
 with st.container():
     st.write("<h1 style='color:yellow;'>Hi im greyhack1999</h1>",unsafe_allow_html=True)
@@ -159,20 +195,3 @@ with st.container():
     st.write('---')
     #<input type='hidden' name='_captcha' value='false'>
 
-#
-# import streamlit as st
-# import streamlit.components.v1 as components
-#
-# # Add a background music using streamlit_player
-# if st.button('Play music'):
-#     try:
-#         components.html(
-#             """
-#             <audio autoplay loop>
-#                 <source src="music/calm.mp3" type="audio/mpeg">
-#             </audio>
-#             """,
-#             height=0
-#         )
-#     except Exception as e:
-#         st.error(f"Error playing music: {e}")
