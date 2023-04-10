@@ -5,20 +5,7 @@ import datetime
 from streamlit_lottie import st_lottie
 from PIL import Image
 
-
-st.set_page_config(page_title="My portfolio", page_icon=":tada:", layout="wide")
-# page_bg_img = """
-# <style>
-# body {
-#     background-image: url("https://your-image-url-here");
-#     background-size: cover;
-# }
-# </style>
-# """
-# st.markdown(page_bg_img, unsafe_allow_html=True)
-
-# Your Streamlit app code here...
-#background-color:#9933ff;
+st.set_page_config(page_title="My portfolio", page_icon=":tada:", layout="wide", initial_sidebar_state="expanded")
 page_bg_img="""
 <style>
 [data-testid="stAppViewContainer"]{
@@ -30,26 +17,8 @@ opacity:0.9;
 """
 st.markdown(page_bg_img,unsafe_allow_html=True)
 
-# def local_css(file_name):
-#     with open(file_name) as f:
-#         css = f.read()
-#         #st.markdown("<style>{}</style>".format(css), unsafe_allow_html=True)
-#         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-#st.set_page_config(page_title="My portfolio", page_icon=":tada:", layout="wide")
-
-# import streamlit as st
-#
-# st.set_page_config(
-#     page_title="My Page Title",
-#     page_icon=":smiley:",
-#     layout="wide",
-#     initial_sidebar_state="expanded",
-#     page_bg_color="#0E1117",
-#     )
 
 # Your Streamlit app code here
-
 st.write("")
 
 def load_lottieur(url):
