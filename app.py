@@ -19,7 +19,7 @@ st.set_page_config(page_title="My portfolio", page_icon=":tada:", layout="wide")
 
 # Your Streamlit app code here...
 #background-color:#9933ff;
-page_bg_img=""""
+page_bg_img="""
 <style>
 [data-testid="stAppViewContainer"]{
 background-color: #9933ff;
@@ -59,7 +59,7 @@ def load_lottieur(url):
     else:
         return r.json()
 
-animation=load_lottieur('https://assets8.lottiefiles.com/packages/lf20_x1ikbkcj.json')
+
 #style1 filipino_style
 img_f=Image.open('images/sepehr-safari-sajiam-n8bZJpA0hig-unsplash.jpg')
 width, height = img_f.size
@@ -106,6 +106,7 @@ with st.container():
                  unsafe_allow_html=True)
 
 with right_column:
+    animation = load_lottieur('https://assets8.lottiefiles.com/packages/lf20_x1ikbkcj.json')
     st_lottie(animation,height=300,key='coding')
 
 
@@ -136,9 +137,7 @@ with st.container():
     text_column,image_column=st.columns((1,2))
     with image_column:
         #insert image
-
         st.image(img_s)
-
     with text_column:
         st.subheader('Filipino Style Cloth')
         ##ff9966
@@ -157,41 +156,28 @@ with st.container():
 
 
 
+    url = load_lottieur('https://assets2.lottiefiles.com/packages/lf20_mDnmhAgZkb.json')
 
-#__contact__FORM
+    st_lottie(url,
+              # change the direction of our animation
+              reverse=True,
+              # height and width of animation
+              height=400,
+              width=400,
+              # speed of animation
+              speed=1,
+              # means the animation will run forever like a gif, and not as a still image
+              loop=True,
+              # quality of elements used in the animation, other values are "low" and "medium"
+              quality='high',
+              # THis is just to uniquely identify the animation
+              key='Car'
+              )
+
+    with st.container():
+        st.write('---')
 
 
 
-with st.container():
-    st.write('---')
-    st.markdown("<div style='text-align: center;'><h1 style='color:#cc6699;'>Please Get in Touch</h1></div>",
-                unsafe_allow_html=True)
 
-
-    left_column, right_column, _ = st.columns([1, 2, 1])
-
-    with left_column:
-        st.write('')
-    with right_column:
-        contact_form = """
-        <form action="https://formsubmit.co/6650288b2352759c4dd8c1fed161b127" method="POST">
-            <input type='hidden' name='_captcha' value='True'>
-            <div style='display: flex; flex-direction: column; gap: 10px;'>
-                <label for="name">Your name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                <label for="email">Your email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <label for="message">Your message:</label>
-                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                <button type="submit">Send</button>
-            </div>
-        </form>
-        """
-        st.markdown(contact_form, unsafe_allow_html=True)
-
-    with _:
-        st.write('')
-
-    st.write('---')
-    #<input type='hidden' name='_captcha' value='false'>
 
